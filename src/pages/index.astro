@@ -1,8 +1,5 @@
 ---
 import Button from '../components/Button.astro';
-
-function handleSend() {}
-console.log('coooror');
 ---
 
 <html lang="en">
@@ -25,7 +22,7 @@ console.log('coooror');
       class="h-[calc(100vh-1rem)] bg-[url('/images/banner-background.webp')] bg-cover bg-center"
     >
       <nav
-        class="flex justify-between border px-10 py-2 items-center font-normal"
+        class="flex items-center justify-between border px-10 py-2 font-normal"
       >
         <img src="/images/logo.webp" alt="" class="w-20" />
         <nav class="hidden sm:flex">
@@ -48,15 +45,15 @@ console.log('coooror');
           <Button text="Reserva" />
         </div>
       </nav>
-      <div class="px-10 gap-4 items-center border py-10">
+      <div class="items-center gap-4 border px-10 py-10">
         <div class="flex-col space-y-4">
-          <h2 class="text-3xl font-extrabold text-center">
+          <h2 class="text-center text-3xl font-extrabold">
             <span class="text-[#626cec]">Viajes y emociones</span>
             <span class="text-[#091ca9]"
               >que dejarán huella en tu vida. <br /> ¡Es un placer servirte!
             </span>
           </h2>
-          <p class="text-[#515151] font-light text-center">
+          <p class="text-center font-light text-[#515151]">
             Nuestra pasión es brindarle experiencias inolvidables. Con más de ?
             años en el mercado, hemos hecho de cada viaje un recuerdo único.
           </p>
@@ -65,7 +62,7 @@ console.log('coooror');
           src="/images/banner.webp"
           alt=""
           srcset=""
-          class="w-10/12 mx-auto"
+          class="mx-auto w-10/12"
         />
       </div>
       <!--  -->
@@ -93,33 +90,33 @@ console.log('coooror');
     </div>
     <!-- banner about -->
     <div
-      class="px-10 py-20 gap-4 bg-[url('/images/background-about.webp')] bg-center"
+      class="gap-4 bg-[url('/images/background-about.webp')] bg-center px-10 py-20"
     >
       <div class="flex-col space-y-4">
-        <h2 class="text-3xl font-extrabold text-white text-center">
+        <h2 class="text-center text-3xl font-extrabold text-white">
           Quienes somos
         </h2>
-        <p class="text-lg text-white font-light text-center">
+        <p class="text-center text-lg font-light text-white">
           En Vacaciones magicas, nuestra pasión es brindarle experiencias
           inolvidables. Con más de [X] años en el mercado, hemos hecho de cada
           viaje un recuerdo único, cuidando cada detalle para que su única
           preocupación sea disfrutar. Desde viajes familiares hasta bodas
           destino, estamos comprometidos con su satisfacción.
         </p>
-        <p class="font-medium text-white text-center">
+        <p class="text-center font-medium text-white">
           ¡Un placer servirle en cada paso del camino!
         </p>
       </div>
-      <img src="/images/bags.webp" alt="" srcset="" class="w-10/12 mx-auto" />
+      <img src="/images/bags.webp" alt="" srcset="" class="mx-auto w-10/12" />
     </div>
     <!-- banner mexico -->
-    <div class="bg-[url('/images/background-mexico.webp')] px-10 py-20 flex">
+    <div class="flex bg-[url('/images/background-mexico.webp')] px-10 py-20">
       <img src="/images/mexico.webp" alt="" srcset="" class="w-1/3" />
-      <div class="flex flex-col space-y-4 items-center">
+      <div class="flex flex-col items-center space-y-4">
         <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
           Tours México
         </h2>
-        <p class="text-right text-[var(--color-gray-dark)] font-light">
+        <p class="text-right font-light text-[var(--color-gray-dark)]">
           <span class="font-medium"
             >Descubra la belleza y riqueza cultural de México</span
           > con nuestros exclusivos tours. Desde las playas paradisiacas del Caribe
@@ -135,15 +132,15 @@ console.log('coooror');
     </div>
     <!-- banner travel international -->
     <div class="bg-white px-10 py-20">
-      <div class="text-center space-y-4">
+      <div class="space-y-4 text-center">
         <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
           Viajes Internacionales
         </h2>
-        <p class="text-[var(--color-gray-dark)] font-light">
+        <p class="font-light text-[var(--color-gray-dark)]">
           El mundo está lleno de destinos increíbles, y nosotros estamos aquí
           para ayudarle a descubrirlos.
         </p>
-        <p class="text-[var(--color-gray-dark)] font-light">
+        <p class="font-light text-[var(--color-gray-dark)]">
           Viaje con nosotros y haga realidad sus sueños internacionales con una
           atención personalizada que hará de su viaje algo excepcional.
         </p>
@@ -156,10 +153,10 @@ console.log('coooror');
     </div>
     <!-- banner weidding -->
     <div
-      class="bg-[url('/images/background-wedding.webp')] px-40 py-28 flex items-center"
+      class="flex items-center bg-[url('/images/background-wedding.webp')] px-10 py-20"
     >
       <img src="/images/boda.webp" alt="" srcset="" class="w-1/2" />
-      <div class="text-end space-y-4">
+      <div class="space-y-4 text-center">
         <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
           Bodas destiono
         </h2>
@@ -176,7 +173,7 @@ console.log('coooror');
       </div>
     </div>
     <!--  -->
-    <div class="bg-lime-200 px-40 py-28 space-y-4 text-center">
+    <div class="space-y-4 bg-lime-200 px-40 py-28 text-center">
       <h2 class="text-3xl font-bold">Grupos y convenciones</h2>
       <p>
         Organizar viajes para grupos grandes y convenciones es nuestra
@@ -188,16 +185,16 @@ console.log('coooror');
         importar el tamaño. Deje que nosotros nos encarguemos de los detalles
         mientras usted se enfoca en su negocio.
       </p>
-      <button class="bg-white py-2 px-4 text-purple-500 rounded-3xl text-sm">
+      <button class="rounded-3xl bg-white px-4 py-2 text-sm text-purple-500">
         Agenda una cita
       </button>
     </div>
     <!--  -->
-    <div class="px-40 py-28 flex gap-4 relative justify-center">
+    <div class="relative flex justify-center gap-4 px-40 py-28">
       <div
-        class="shadow-sm shadow-purple-200 rounded-2xl p-4 flex-1 space-y-4 text-center"
+        class="flex-1 space-y-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
       >
-        <img src="/images/person.webp" alt="" class="w-1/5 mx-auto" />
+        <img src="/images/person.webp" alt="" class="mx-auto w-1/5" />
         <h2 class="text-2xl font-bold">Coordinación de eventos</h2>
         <p class="text-sm">
           Ya sea una boda, una conferencia o una celebración especial, nuestros
@@ -209,9 +206,9 @@ console.log('coooror');
         <Button text="Agenda una cita" />
       </div>
       <div
-        class="shadow-sm shadow-purple-200 rounded-2xl p-4 flex-1 space-y-4 text-center"
+        class="flex-1 space-y-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
       >
-        <img src="/images/passport.webp" alt="" class="w-1/6 mx-auto" />
+        <img src="/images/passport.webp" alt="" class="mx-auto w-1/6" />
         <h2 class="text-2xl font-bold">Trámites de visa y pasaporte</h2>
         <p class="text-sm">
           Sabemos que los detalles administrativos pueden ser complicados, por
