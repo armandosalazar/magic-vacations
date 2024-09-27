@@ -11,22 +11,24 @@ console.log('coooror');
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="
+    https://cdn.jsdelivr.net/npm/airbnbcereal@1.1.0/stylesheet.min.css
+    "
       rel="stylesheet"
     />
     <title>Astro</title>
   </head>
-  <body class="font-body">
-    <!--  -->
+  <body>
+    <!-- banner top -->
     <div
-      class="relative h-[calc(100vh-1rem)] bg-[url('/images/background-1.webp')] bg-cover"
+      class="h-[calc(100vh-1rem)] bg-[url('/images/banner-background.webp')] bg-cover bg-center"
     >
-      <nav class="flex justify-between border px-10 py-2 items-center">
+      <nav
+        class="flex justify-between border px-10 py-2 items-center font-normal"
+      >
         <img src="/images/logo.webp" alt="" class="w-20" />
-        <nav>
+        <nav class="hidden sm:flex">
           <ul class="flex gap-4">
             <li>
               <a href="#">Inicio</a>
@@ -46,26 +48,30 @@ console.log('coooror');
           <Button text="Reserva" />
         </div>
       </nav>
-      <div class="flex px-40 gap-4 items-center border py-10">
+      <div class="px-10 gap-4 items-center border py-10">
         <div class="flex-col space-y-4">
-          <h2 class="text-3xl font-bold">
+          <h2 class="text-3xl font-extrabold text-center">
             <span class="text-[#626cec]">Viajes y emociones</span>
             <span class="text-[#091ca9]"
               >que dejarán huella en tu vida. <br /> ¡Es un placer servirte!
             </span>
           </h2>
-          <p class="text-[#515151]">
+          <p class="text-[#515151] font-light text-center">
             Nuestra pasión es brindarle experiencias inolvidables. Con más de ?
             años en el mercado, hemos hecho de cada viaje un recuerdo único.
           </p>
         </div>
-        <img src="/images/banner.webp" alt="" srcset="" class="w-1/3" />
+        <img
+          src="/images/banner.webp"
+          alt=""
+          srcset=""
+          class="w-10/12 mx-auto"
+        />
       </div>
       <!--  -->
-      <div
-        class="absolute left-1/2 -bottom-4 transform -translate-x-1/2 bg-white p-4 flex gap-4 rounded-3xl"
-      >
-        <div
+      <!-- <div class="bg-white p-4 flex-col gap-4 rounded-3xl mx-2">
+        <div class="w-full bg-black h-[calc(100vw-1rem)]"></div>
+         <div
           class="w-60 h-60 bg-[url('/images/banner-1.webp')] rounded-xl relative flex justify-center bg-cover items-end"
         >
           <h3 class="mb-10 font-medium text-white">Viajes internacionales</h3>
@@ -83,64 +89,80 @@ console.log('coooror');
         >
           <h3 class="mb-10 font-medium text-white">Viajes internacionales</h3>
         </div>
-      </div>
+      </div> -->
     </div>
-    <!--  -->
-    <div class="px-40 py-28 gap-4 flex bg-purple-400 items-center">
+    <!-- banner about -->
+    <div
+      class="px-10 py-20 gap-4 bg-[url('/images/background-about.webp')] bg-center"
+    >
       <div class="flex-col space-y-4">
-        <h2 class="text-3xl font-bold text-white">Quienes somos</h2>
-        <p class="text-lg text-white">
+        <h2 class="text-3xl font-extrabold text-white text-center">
+          Quienes somos
+        </h2>
+        <p class="text-lg text-white font-light text-center">
           En Vacaciones magicas, nuestra pasión es brindarle experiencias
           inolvidables. Con más de [X] años en el mercado, hemos hecho de cada
           viaje un recuerdo único, cuidando cada detalle para que su única
           preocupación sea disfrutar. Desde viajes familiares hasta bodas
           destino, estamos comprometidos con su satisfacción.
         </p>
-        <p class="font-medium">¡Un placer servirle en cada paso del camino!</p>
+        <p class="font-medium text-white text-center">
+          ¡Un placer servirle en cada paso del camino!
+        </p>
       </div>
-      <img src="/images/travel.webp" alt="" srcset="" class="w-1/3" />
+      <img src="/images/bags.webp" alt="" srcset="" class="w-10/12 mx-auto" />
     </div>
-    <!--  -->
-    <div class="bg-green-200 px-40 py-28 flex">
+    <!-- banner mexico -->
+    <div class="bg-[url('/images/background-mexico.webp')] px-10 py-20 flex">
       <img src="/images/mexico.webp" alt="" srcset="" class="w-1/3" />
-      <div class="flex flex-col items-end space-y-4">
-        <h2 class="text-3xl font-bold">Tours México</h2>
-        <p class="text-right">
-          Descubra la belleza y riqueza cultural de México con nuestros
-          exclusivos tours. Desde las playas paradisiacas del Caribe hasta las
-          majestuosas montañas del norte, diseñamos experiencias que lo
+      <div class="flex flex-col space-y-4 items-center">
+        <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
+          Tours México
+        </h2>
+        <p class="text-right text-[var(--color-gray-dark)] font-light">
+          <span class="font-medium"
+            >Descubra la belleza y riqueza cultural de México</span
+          > con nuestros exclusivos tours. Desde las playas paradisiacas del Caribe
+          hasta las majestuosas montañas del norte, diseñamos experiencias que lo
           conectarán con la verdadera esencia de nuestro país. Déjese sorprender
           por cada rincón y viva México como nunca antes.
         </p>
         <Button text="Reserva ahora" />
-        <p class="font-medium">Disfruta de experiencias únicas</p>
+        <p class="font-medium text-[var(--color-primary)]">
+          Disfruta de experiencias únicas
+        </p>
       </div>
     </div>
-    <div class="bg-orange-200 px-40 py-28 flex items-center">
-      <div class="flex-col space-y-4">
-        <h2 class="text-3xl font-bold">Viajes Internacionales</h2>
-        <p>
+    <!-- banner travel international -->
+    <div class="bg-white px-10 py-20">
+      <div class="text-center space-y-4">
+        <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
+          Viajes Internacionales
+        </h2>
+        <p class="text-[var(--color-gray-dark)] font-light">
           El mundo está lleno de destinos increíbles, y nosotros estamos aquí
           para ayudarle a descubrirlos.
         </p>
-        <p>
-          Explore ciudades llenas de historia, paisajes naturales impactantes y
-          culturas fascinantes.
-        </p>
-        <p>
+        <p class="text-[var(--color-gray-dark)] font-light">
           Viaje con nosotros y haga realidad sus sueños internacionales con una
           atención personalizada que hará de su viaje algo excepcional.
         </p>
         <Button text="Agenda una cita" />
-        <p class="font-medium">Comienza a planear tu próxima aventura</p>
+        <p class="font-medium text-[var(--color-primary)]">
+          Comienza a planear tu próxima aventura
+        </p>
       </div>
       <img src="/images/bag.webp" alt="" srcset="" class="w-1/3" />
     </div>
-    <!--  -->
-    <div class="bg-red-50 px-40 py-28 flex items-center">
+    <!-- banner weidding -->
+    <div
+      class="bg-[url('/images/background-wedding.webp')] px-40 py-28 flex items-center"
+    >
       <img src="/images/boda.webp" alt="" srcset="" class="w-1/2" />
       <div class="text-end space-y-4">
-        <h2 class="text-3xl font-bold">Bodas destiono</h2>
+        <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
+          Bodas destiono
+        </h2>
         <p>
           Haga de su boda un evento mágico e inolvidable en un destino de
           ensueño.
@@ -211,3 +233,17 @@ console.log('coooror');
   </body>
   <!-- s -->
 </html>
+
+<style is:global>
+  :root {
+    --color-primary: #626cec;
+    --color-secondary: #091ca9;
+    --color-gray: #747676;
+    --color-gray-dark: #515151;
+    --color-gray-medium: #606060;
+  }
+
+  body {
+    font-family: 'Airbnb Cereal App', sans-serif;
+  }
+</style>
