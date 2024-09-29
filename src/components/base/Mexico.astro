@@ -3,7 +3,7 @@ import Button from '../Button.astro';
 ---
 
 <section
-  class="flex flex-col items-center overflow-x-hidden bg-[url('/images/background-mexico.webp')] px-10 py-20 [&>*]:outline"
+  class="flex flex-col items-center gap-4 overflow-x-hidden bg-[url('/images/background-mexico.webp')] bg-center px-10 py-20"
 >
   <img
     data-aos="fade-right"
@@ -12,12 +12,12 @@ import Button from '../Button.astro';
     srcset=""
     class="w-11/12"
   />
-  <article data-aos="fade-left" class="flex flex-col items-center space-y-4">
+  <article data-aos="fade-left" class="flex flex-col gap-4 text-center">
     <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
       Tours México
     </h2>
-    <p class="text-right font-light text-[var(--color-gray-dark)]">
-      <span class="font-up"
+    <p class="font-light text-[var(--color-gray-dark)]">
+      <span class="font-medium"
         >Descubra la belleza y riqueza cultural de México</span
       > con nuestros exclusivos tours. Desde las playas paradisiacas del Caribe hasta
       las majestuosas montañas del norte, diseñamos experiencias que lo conectarán
