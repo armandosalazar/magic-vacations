@@ -1,5 +1,8 @@
 ---
+import About from '../components/base/About.astro';
+import Header from '../components/base/Header.astro';
 import Button from '../components/Button.astro';
+import 'aos/dist/aos.css';
 ---
 
 <html lang="en">
@@ -17,54 +20,10 @@ import Button from '../components/Button.astro';
     <title>Astro</title>
   </head>
   <body>
-    <!-- banner top -->
-    <div
-      class="h-[calc(100vh-1rem)] bg-[url('/images/banner-background.webp')] bg-cover bg-center"
-    >
-      <nav class="hidden items-center justify-between">
-        <img src="/images/logo.webp" alt="" class="w-20" />
-        <nav class="">
-          <ul class="flex gap-4">
-            <li>
-              <a href="#">Inicio</a>
-            </li>
-            <li>
-              <a href="#">Nosotros</a>
-            </li>
-            <li>
-              <a href="#">Servicios</a>
-            </li>
-            <li>
-              <a href="#">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <Button text="Reserva" />
-        </div>
-      </nav>
-      <div class="items-center gap-4 border px-10 py-10">
-        <div class="flex-col space-y-4">
-          <h2 class="text-center text-3xl font-extrabold">
-            <span class="text-[var(--color-primary)]">Viajes y emociones</span>
-            <span class="text-[var(--color-secondary)]"
-              >que dejarán huella en tu vida. <br /> ¡Es un placer servirte!
-            </span>
-          </h2>
-          <p class="text-center font-light text-[var(--color-gray-dark)]">
-            Nuestra pasión es brindarle experiencias inolvidables. Con más de ?
-            años en el mercado, hemos hecho de cada viaje un recuerdo único.
-          </p>
-        </div>
-        <img
-          src="/images/banner.webp"
-          alt=""
-          srcset=""
-          class="mx-auto w-11/12"
-        />
-      </div>
-      <!--  -->
-      <!-- <div class="bg-white p-4 flex-col gap-4 rounded-3xl mx-2">
+    <!--  -->
+    <Header />
+    <About />
+    <!-- <div class="bg-white p-4 flex-col gap-4 rounded-3xl mx-2">
         <div class="w-full bg-black h-[calc(100vw-1rem)]"></div>
          <div
           class="w-60 h-60 bg-[url('/images/banner-1.webp')] rounded-xl relative flex justify-center bg-cover items-end"
@@ -85,51 +44,6 @@ import Button from '../components/Button.astro';
           <h3 class="mb-10 font-medium text-white">Viajes internacionales</h3>
         </div>
       </div> -->
-    </div>
-    <!-- banner about -->
-    <div
-      class="gap-4 bg-[url('/images/background-about.webp')] bg-center px-10 py-20"
-    >
-      <div class="flex-col space-y-4">
-        <h2 class="text-center text-3xl font-extrabold text-white">
-          Quienes somos
-        </h2>
-        <p class="text-center text-lg font-light text-white">
-          En Vacaciones magicas, nuestra pasión es brindarle experiencias
-          inolvidables. Con más de [X] años en el mercado, hemos hecho de cada
-          viaje un recuerdo único, cuidando cada detalle para que su única
-          preocupación sea disfrutar. Desde viajes familiares hasta bodas
-          destino, estamos comprometidos con su satisfacción.
-        </p>
-        <p class="text-center font-medium text-white">
-          ¡Un placer servirle en cada paso del camino!
-        </p>
-      </div>
-      <img src="/images/bags.webp" alt="" srcset="" class="mx-auto w-11/12" />
-    </div>
-    <!-- banner mexico -->
-    <div
-      class="flex-col bg-[url('/images/background-mexico.webp')] px-10 py-20"
-    >
-      <img src="/images/mexico.webp" alt="" srcset="" class="w-11/12" />
-      <div class="flex flex-col items-center space-y-4">
-        <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
-          Tours México
-        </h2>
-        <p class="text-right font-light text-[var(--color-gray-dark)]">
-          <span class="font-medium"
-            >Descubra la belleza y riqueza cultural de México</span
-          > con nuestros exclusivos tours. Desde las playas paradisiacas del Caribe
-          hasta las majestuosas montañas del norte, diseñamos experiencias que lo
-          conectarán con la verdadera esencia de nuestro país. Déjese sorprender
-          por cada rincón y viva México como nunca antes.
-        </p>
-        <Button text="Reserva ahora" />
-        <p class="font-medium text-[var(--color-primary)]">
-          Disfruta de experiencias únicas
-        </p>
-      </div>
-    </div>
     <!-- banner travel international -->
     <div class="bg-white px-10 py-20">
       <div class="space-y-4 text-center">
@@ -230,11 +144,15 @@ import Button from '../components/Button.astro';
         </p>
         <Button text="Agenda una cita" />
       </div>
-      <div class="absolute -bottom-4">
+      <div class="absolute -bottom-4 z-10">
         <Button text="Arriba" />
       </div>
     </div>
-    <div class="border border-t-[var(--color-primary)] bg-white px-5 py-10">
+    <!-- footer -->
+    <div
+      data-aos="fade-up"
+      class="border border-t-[var(--color-primary)] bg-white px-5 py-10"
+    >
       <div class="flex flex-col items-center">
         <h2 class="mb-4 text-2xl font-extrabold text-[var(--color-secondary)]">
           Contactanos
@@ -264,12 +182,19 @@ import Button from '../components/Button.astro';
           <img src="/images/instagram.webp" alt="" class="w-5" />
         </div>
         <p class="pt-4">
-          <span class="text-[var(--color-primary)] text-sm">Vacaciones Magicas</span> ©2021
+          <span class="text-sm text-[var(--color-primary)]"
+            >Vacaciones Magicas</span
+          > ©2021
         </p>
       </div>
     </div>
   </body>
-  <!-- s -->
+  <!-- script -->
+  <script>
+    import aos from '../js/aos';
+
+    aos();
+  </script>
 </html>
 
 <style is:global>
