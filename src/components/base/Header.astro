@@ -1,53 +1,11 @@
 ---
-import Button from '../Button.astro';
+import Menu from './Menu';
 ---
 
 <header
-  class="h-[calc(100vh-1rem)] overflow-x-hidden bg-[url('/images/banner-background.webp')] bg-cover bg-center"
+  class="overflow-x-hidden bg-[url('/images/banner-background.webp')] bg-cover bg-center"
 >
-  <!-- use svg from src/svg/align-right.svg -->
-  <div class="flex justify-end p-4 text-[var(--color-primary)]">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="28"
-      height="28"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      class="lucide lucide-align-right"
-      ><line x1="21" x2="3" y1="6" y2="6"></line><line
-        x1="21"
-        x2="9"
-        y1="12"
-        y2="12"></line><line x1="21" x2="7" y1="18" y2="18"></line></svg
-    >
-  </div>
-
-  <nav class="hidden items-center justify-between">
-    <img src="/images/logo.webp" alt="" class="w-20" />
-    <nav class="">
-      <ul class="flex gap-4">
-        <li>
-          <a href="#">Inicio</a>
-        </li>
-        <li>
-          <a href="#">Nosotros</a>
-        </li>
-        <li>
-          <a href="#">Servicios</a>
-        </li>
-        <li>
-          <a href="#">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-    <div>
-      <Button text="Reserva" />
-    </div>
-  </nav>
+  <Menu client:load/>
   <section data-aos="fade-up" class="flex flex-col gap-4 px-10 pb-20 pt-10">
     <article data-aos="fade-right" class="flex flex-col gap-4 text-center">
       <h2 class="text-3xl font-extrabold">
