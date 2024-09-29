@@ -2,8 +2,8 @@
 import Button from '../Button.astro';
 ---
 
-<section class="bg-white px-10 py-20">
-  <article class="space-y-4 text-center">
+<section class="overflow-x-hidden bg-white px-10 py-20">
+  <article data-aos="fade-right" class="space-y-4 text-center">
     <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
       Viajes Internacionales
     </h2>
@@ -20,5 +20,11 @@ import Button from '../Button.astro';
       Comienza a planear tu próxima aventura
     </p>
   </article>
-  <img src="/images/international.webp" alt="" srcset="" class="w-11/12" />
+  <img
+    data-aos="fade-left"
+    src="/images/international.webp"
+    alt=""
+    srcset=""
+    class="w-11/12"
+  />
 </section>

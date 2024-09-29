@@ -3,7 +3,7 @@ import Button from '../Button.astro';
 ---
 
 <header
-  class="h-[calc(100vh-1rem)] bg-[url('/images/banner-background.webp')] bg-cover bg-center"
+  class="h-[calc(100vh-1rem)] overflow-x-hidden bg-[url('/images/banner-background.webp')] bg-cover bg-center"
 >
   <!-- use svg from src/svg/align-right.svg -->
   <div class="flex justify-end p-4 text-[var(--color-primary)]">
@@ -48,8 +48,8 @@ import Button from '../Button.astro';
       <Button text="Reserva" />
     </div>
   </nav>
-  <section data-aos="fade-right" class="flex flex-col gap-4 px-10 pb-20 pt-10">
-    <article class="flex flex-col gap-4 text-center">
+  <section data-aos="fade-up" class="flex flex-col gap-4 px-10 pb-20 pt-10">
+    <article data-aos="fade-right" class="flex flex-col gap-4 text-center">
       <h2 class="text-3xl font-extrabold">
         <span class="text-[var(--color-primary)]">Viajes y emociones</span>
         <span class="text-[var(--color-secondary)]"
