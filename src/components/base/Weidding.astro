@@ -1,0 +1,29 @@
+---
+import Button from '../Button.astro';
+---
+
+<section
+  class="[&>*]: flex-col bg-[url('/images/background-wedding.webp')] bg-center px-10 py-20 text-center"
+>
+  <img
+    data-os="fade-right"
+    src="/images/weidding.webp"
+    alt=""
+    srcset=""
+    class="w-11/12"
+  />
+  <article data-os="fade-left" class="space-y-4 text-center">
+    <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
+      Bodas destiono
+    </h2>
+    <p class="font-light">
+      Haga de su boda un evento mágico e inolvidable en un destino de ensueño.
+    </p>
+    <p class="font-light">
+      Nos especializamos en coordinar cada detalle para que su gran día sea tan
+      especial como lo imaginó. Desde playas tropicales hasta elegantes viñedos,
+      tenemos el lugar perfecto para su "Sí, acepto".
+    </p>
+    <Button text="Reserva Ahora" />
+  </article>
+</section>

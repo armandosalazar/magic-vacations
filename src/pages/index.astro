@@ -1,7 +1,11 @@
 ---
 import About from '../components/base/About.astro';
+import Cards from '../components/base/Cards.astro';
+import Footer from '../components/base/Footer.astro';
+import Groups from '../components/base/Groups.astro';
 import Header from '../components/base/Header.astro';
-import Button from '../components/Button.astro';
+import Mexico from '../components/base/Mexico.astro';
+import Travel from '../components/base/Travel.astro';
 import 'aos/dist/aos.css';
 ---
 
@@ -20,193 +24,32 @@ import 'aos/dist/aos.css';
     <title>Astro</title>
   </head>
   <body>
-    <!--  -->
     <Header />
     <About />
-    <!-- <div class="bg-white p-4 flex-col gap-4 rounded-3xl mx-2">
-        <div class="w-full bg-black h-[calc(100vw-1rem)]"></div>
-         <div
-          class="w-60 h-60 bg-[url('/images/banner-1.webp')] rounded-xl relative flex justify-center bg-cover items-end"
-        >
-          <h3 class="mb-10 font-medium text-white">Viajes internacionales</h3>
-        </div>
-        <div
-          class="w-60 h-60 bg-[url('/images/banner-2.webp')] rounded-xl relative flex justify-center bg-cover items-end"
-        >
-          <h3 class="mb-10 font-medium text-white">Viajes internacionales</h3>
-          <div class="absolute -bottom-2">
-            <Button text="Reserva" />
-          </div>
-        </div>
-        <div
-          class="w-60 h-60 bg-[url('/images/banner-3.webp')] rounded-xl relative flex justify-center bg-cover items-end"
-        >
-          <h3 class="mb-10 font-medium text-white">Viajes internacionales</h3>
-        </div>
-      </div> -->
-    <!-- banner travel international -->
-    <div class="bg-white px-10 py-20">
-      <div class="space-y-4 text-center">
-        <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
-          Viajes Internacionales
-        </h2>
-        <p class="font-light text-[var(--color-gray-dark)]">
-          El mundo está lleno de destinos increíbles, y nosotros estamos aquí
-          para ayudarle a descubrirlos.
-        </p>
-        <p class="font-light text-[var(--color-gray-dark)]">
-          Viaje con nosotros y haga realidad sus sueños internacionales con una
-          atención personalizada que hará de su viaje algo excepcional.
-        </p>
-        <Button text="Agenda una cita" />
-        <p class="font-medium text-[var(--color-primary)]">
-          Comienza a planear tu próxima aventura
-        </p>
-      </div>
-      <img src="/images/international.webp" alt="" srcset="" class="w-11/12" />
-    </div>
-    <!-- banner weidding -->
-    <div
-      class="[&>*]: flex-col bg-[url('/images/background-wedding.webp')] bg-center px-10 py-20 text-center"
-    >
-      <img src="/images/weidding.webp" alt="" srcset="" class="w-11/12" />
-      <div class="space-y-4 text-center">
-        <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
-          Bodas destiono
-        </h2>
-        <p class="font-light">
-          Haga de su boda un evento mágico e inolvidable en un destino de
-          ensueño.
-        </p>
-        <p class="font-light">
-          Nos especializamos en coordinar cada detalle para que su gran día sea
-          tan especial como lo imaginó. Desde playas tropicales hasta elegantes
-          viñedos, tenemos el lugar perfecto para su "Sí, acepto".
-        </p>
-        <Button text="Reserva Ahora" />
-      </div>
-    </div>
-    <!--  -->
-    <div
-      class="space-y-4 bg-[url('/images/background-groups.webp')] bg-center px-10 py-20 text-center"
-    >
-      <h2 class="text-3xl font-extrabold text-white">Grupos y convenciones</h2>
-      <p class="font-light text-white">
-        Organizar viajes para grupos grandes y convenciones es nuestra
-        especialidad.
-      </p>
-      <p class="font-light text-white">
-        Ofrecemos soluciones logísticas integrales que se adaptan a las
-        necesidades de cada cliente, asegurando que su evento sea un éxito sin
-        importar el tamaño. Deje que nosotros nos encarguemos de los detalles
-        mientras usted se enfoca en su negocio.
-      </p>
-      <button
-        class="rounded-3xl bg-white px-4 py-2 text-sm text-[var(--color-primary)]"
-      >
-        Agenda una cita
-      </button>
-    </div>
-    <!-- cards  -->
-    <div class="relative flex flex-col items-center gap-5 px-5 py-10">
-      <div
-        class="flex-1 space-y-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
-      >
-        <img src="/images/person.webp" alt="" class="mx-auto w-1/5" />
-        <h2 class="text-2xl font-extrabold text-[var(--color-secondary)]">
-          Coordinación de eventos
-        </h2>
-        <p class="text-sm font-light">
-          Ya sea una boda, una conferencia o una celebración especial, nuestros
-          expertos en coordinación de eventos están listos para ayudarle a
-          planificar y ejecutar cada detalle con precisión. Nos aseguramos de
-          que todo salga perfecto, para que usted pueda relajarse y disfrutar
-          del momento.
-        </p>
-        <Button text="Agenda una cita" />
-      </div>
-      <div
-        class="flex-1 space-y-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
-      >
-        <img src="/images/passport.webp" alt="" class="mx-auto w-1/6" />
-        <h2 class="text-2xl font-extrabold text-[var(--color-secondary)]">
-          Trámites de visa y pasaporte
-        </h2>
-        <p class="text-sm font-light">
-          Sabemos que los detalles administrativos pueden ser complicados, por
-          eso estamos aquí para ayudarle con todos sus trámites de visa y
-          pasaporte.
-        </p>
-        <p class="text-sm font-light">
-          Nuestro equipo le guiará a través del proceso, garantizando que su
-          documentación esté en orden para que pueda enfocarse en disfrutar de
-          su viaje..
-        </p>
-        <Button text="Agenda una cita" />
-      </div>
-      <div class="absolute -bottom-4 z-10">
-        <Button text="Arriba" />
-      </div>
-    </div>
-    <!-- footer -->
-    <div
-      data-aos="fade-up"
-      class="border border-t-[var(--color-primary)] bg-white px-5 py-10"
-    >
-      <div class="flex flex-col items-center">
-        <h2 class="mb-4 text-2xl font-extrabold text-[var(--color-secondary)]">
-          Contactanos
-        </h2>
-        <div class="flex flex-col gap-2">
-          <div>
-            <div class="flex items-center gap-2">
-              <img src="/images/phone.webp" alt="" class="w-4" />
-              <h3 class="text-sm text-[var(--color-primary)]">33 3852 0452</h3>
-            </div>
-          </div>
-          <div>
-            <div class="flex items-center gap-2">
-              <img src="/images/whatsapp.webp" alt="" class="w-5" />
-              <h3 class="text-sm text-[var(--color-primary)]">33 3852 0452</h3>
-            </div>
-          </div>
-        </div>
+    <Mexico />
+    <Travel />
+    <Groups />
+    <Cards />
+    <Footer />
+    <!-- script -->
+    <script>
+      import aos from '../js/aos';
 
-        <h2
-          class="mb-4 mt-4 text-2xl font-extrabold text-[var(--color-secondary)]"
-        >
-          Siguenos
-        </h2>
-        <div class="flex gap-2">
-          <img src="/images/facebook.webp" alt="" class="w-5" />
-          <img src="/images/instagram.webp" alt="" class="w-5" />
-        </div>
-        <p class="pt-4">
-          <span class="text-sm text-[var(--color-primary)]"
-            >Vacaciones Magicas</span
-          > ©2021
-        </p>
-      </div>
-    </div>
+      aos();
+    </script>
   </body>
-  <!-- script -->
-  <script>
-    import aos from '../js/aos';
 
-    aos();
-  </script>
+  <style is:global>
+    :root {
+      --color-primary: #626cec;
+      --color-secondary: #091ca9;
+      --color-gray: #747676;
+      --color-gray-dark: #515151;
+      --color-gray-medium: #606060;
+    }
+
+    body {
+      font-family: 'Airbnb Cereal App', sans-serif;
+    }
+  </style>
 </html>
-
-<style is:global>
-  :root {
-    --color-primary: #626cec;
-    --color-secondary: #091ca9;
-    --color-gray: #747676;
-    --color-gray-dark: #515151;
-    --color-gray-medium: #606060;
-  }
-
-  body {
-    font-family: 'Airbnb Cereal App', sans-serif;
-  }
-</style>
