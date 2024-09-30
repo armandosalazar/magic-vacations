@@ -3,9 +3,12 @@ import Button from '../Button.astro';
 ---
 
 <section
-  class="flex flex-col items-center gap-4 overflow-x-hidden bg-white px-10 py-20"
+  class="flex flex-col items-center gap-4 overflow-x-hidden bg-white px-10 py-20 sm:flex-row sm:px-60 sm:py-20"
 >
-  <article data-aos="fade-right" class="flex flex-col gap-4 text-center">
+  <article
+    data-aos="fade-right"
+    class="flex flex-col gap-4 text-center sm:items-start sm:text-left"
+  >
     <h2 class="text-3xl font-extrabold text-[var(--color-secondary)]">
       Viajes Internacionales
     </h2>
@@ -27,6 +30,6 @@ import Button from '../Button.astro';
     src="/images/international.webp"
     alt=""
     srcset=""
-    class="w-11/12"
+    class="w-11/12 sm:w-1/3"
   />
 </section>
