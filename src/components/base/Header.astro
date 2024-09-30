@@ -1,13 +1,20 @@
 ---
 import Menu from './Menu';
+import Carousel from './Carousel';
 ---
 
 <header
-  class="overflow-x-hidden bg-[url('/images/banner-background.webp')] bg-cover bg-center"
+  class="overflow-hidden bg-[url('/images/banner-background.webp')] bg-cover bg-center pb-10"
 >
   <Menu client:load />
-  <section data-aos="fade-up" class="flex flex-col gap-4 px-10 pb-20 pt-10">
-    <article data-aos="fade-right" class="flex flex-col gap-4 text-center">
+  <section
+    data-aos="fade-up"
+    class="flex flex-col gap-4 px-10 pb-20 pt-10 sm:flex-row sm:items-center sm:px-60 sm:py-20"
+  >
+    <article
+      data-aos="fade-right"
+      class="flex flex-col gap-4 text-center sm:text-left"
+    >
       <h2 class="text-3xl font-extrabold">
         <span class="text-[var(--color-primary)]">Viajes y emociones</span>
         <span class="text-[var(--color-secondary)]"
@@ -24,7 +31,11 @@ import Menu from './Menu';
       src="/images/banner.webp"
       alt=""
       srcset=""
-      class="w-11/12"
+      class="w-11/12 sm:w-1/3"
     />
+  </section>
+
+  <section class="mx-auto w-2/3 sm:w-4/6">
+    <Carousel client:load />
   </section>
 </header>
