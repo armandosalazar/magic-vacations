@@ -3,6 +3,7 @@ import Button from '../Button.astro';
 ---
 
 <section
+  id="mexico"
   class="flex flex-col items-center gap-4 overflow-x-hidden bg-[url('/images/background-mexico.webp')] bg-center px-10 py-20 sm:flex-row sm:px-60 sm:py-20"
 >
   <img
@@ -27,7 +28,12 @@ import Button from '../Button.astro';
       con la verdadera esencia de nuestro país. Déjese sorprender por cada rincón
       y viva México como nunca antes.
     </p>
-    <Button text="Reserva ahora" />
+    <a
+      href="https://www.reservatuviaje.mx/default.aspx?agentID=1325"
+      target="_blank"
+    >
+      <Button text="Reserva ahora" />
+    </a>
     <p class="font-medium text-[var(--color-primary)]">
       Disfruta de experiencias únicas
     </p>

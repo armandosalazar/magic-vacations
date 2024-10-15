@@ -12,7 +12,7 @@ const Menu = () => {
   return (
     <>
       <div className="flex items-center justify-between gap-4 p-4 text-[var(--color-primary)]">
-        <img src="/images/logo.webp" alt="" className="w-20" />
+        <img src="/images/logo.webp" alt="" className="w-28" />
         <svg
           onClick={handleToggle}
           xmlns="http://www.w3.org/2000/svg"
@@ -34,31 +34,53 @@ const Menu = () => {
         <nav className="hidden font-light text-[var(--color-gray-dark)] sm:flex">
           <ul className="items-baseline space-y-1.5 text-center sm:flex [&>li]:px-2">
             <li>
-              <a href="#">Quiénes somo</a>
+              <a href="#about" className="hover:text-[var(--color-primary)]">
+                Quiénes somos
+              </a>
             </li>
             <li>
-              <a href="#">Tours de México</a>
+              <a href="#mexico" className="hover:text-[var(--color-primary)]">
+                Tours de México
+              </a>
             </li>
             <li>
-              <a href="#">Viajes Internacionales</a>
+              <a
+                href="#international"
+                className="hover:text-[var(--color-primary)]"
+              >
+                Viajes Internacionales
+              </a>
             </li>
             <li>
-              <a href="#">Bodas Destino</a>
+              <a href="#weidding" className="hover:text-[var(--color-primary)]">
+                Bodas Destino
+              </a>
             </li>
             <li>
-              <a href="#">Grupos y Convenciones</a>
+              <a href="#groups" className="hover:text-[var(--color-primary)]">
+                Grupos y Convenciones
+              </a>
             </li>
             <li>
-              <a href="#">Coordinación de Eventos</a>
+              <a href="#groups" className="hover:text-[var(--color-primary)]">
+                Coordinación de Eventos
+              </a>
             </li>
             <li>
-              <a href="#">Tramites de Visas y Pasaporte</a>
+              <a href="#services" className="hover:text-[var(--color-primary)]">
+                Tramites de Visas y Pasaporte
+              </a>
             </li>
           </ul>
         </nav>
-        <button className="hidden rounded-3xl bg-[#626cec] px-4 py-2 text-sm text-white sm:flex">
-          Reservas
-        </button>
+        <a
+          href="https://www.reservatuviaje.mx/default.aspx?agentID=1325"
+          target="_blank"
+        >
+          <button className="hidden rounded-3xl bg-[#626cec] px-4 py-2 text-sm text-white sm:flex">
+            Reservas
+          </button>
+        </a>
       </div>
 
       <AnimatePresence>

@@ -3,11 +3,12 @@ import Button from '../Button.astro';
 ---
 
 <section
+  id="services"
   class="relative mx-auto flex flex-col items-center gap-5 px-5 py-10 sm:w-11/12 sm:flex-row sm:gap-4 sm:px-10 sm:py-20"
 >
   <article
     data-aos="fade-up"
-    class="flex flex-1 flex-col gap-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
+    class="flex h-full flex-1 flex-col gap-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
   >
     <img src="/images/person.webp" alt="" class="mx-auto w-1/4" />
     <h2 class="text-2xl font-extrabold text-[var(--color-secondary)]">
@@ -20,11 +21,15 @@ import Button from '../Button.astro';
       todo salga perfecto, para que usted pueda relajarse y disfrutar del
       momento.
     </p>
-    <Button text="Agenda una cita" />
+    <div>
+      <a href="https://wa.me/message/ZMCUE5SHOGUOC1" target="_blank">
+        <Button text="Agenda una cita" />
+      </a>
+    </div>
   </article>
   <article
     data-aos="fade-up"
-    class="flex-1 space-y-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
+    class="flex flex-1 flex-col gap-4 rounded-2xl p-4 text-center shadow-sm shadow-purple-200"
   >
     <img src="/images/passport.webp" alt="" class="mx-auto w-1/6" />
     <h2 class="text-2xl font-extrabold text-[var(--color-secondary)]">
@@ -39,9 +44,18 @@ import Button from '../Button.astro';
       documentación esté en orden para que pueda enfocarse en disfrutar de su
       viaje..
     </p>
-    <Button text="Agenda una cita" />
+    <div>
+      <a href="https://wa.me/message/ZMCUE5SHOGUOC1" target="_blank">
+        <Button text="Agenda una cita" />
+      </a>
+    </div>
   </article>
   <div class="absolute -bottom-4 left-1/2 z-10 -translate-x-1/2">
-    <Button text="Arriba" />
+    <button
+      class="rounded-3xl bg-[#626cec] px-4 py-2 text-sm text-white"
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+    >
+      Arriba
+    </button>
   </div>
 </section>
