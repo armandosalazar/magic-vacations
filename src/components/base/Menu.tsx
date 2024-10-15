@@ -11,25 +11,27 @@ const Menu = () => {
 
   return (
     <>
-      <div className="flex items-center justify-between gap-4 p-4 text-[var(--color-primary)]">
+      <div className="flex flex-row items-center justify-between gap-4 p-4 text-[var(--color-primary)]">
         <img src="/images/logo.webp" alt="" className="w-28" />
-        <svg
-          onClick={handleToggle}
-          xmlns="http://www.w3.org/2000/svg"
-          width="28"
-          height="28"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className="lucide lucide-align-right sm:hidden"
-        >
-          <line x1="21" x2="3" y1="6" y2="6"></line>
-          <line x1="21" x2="9" y1="12" y2="12"></line>
-          <line x1="21" x2="7" y1="18" y2="18"></line>
-        </svg>
+        <div>
+          <svg
+            onClick={handleToggle}
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="lucide lucide-align-right sm:hidden"
+          >
+            <line x1="21" x2="3" y1="6" y2="6"></line>
+            <line x1="21" x2="9" y1="12" y2="12"></line>
+            <line x1="21" x2="7" y1="18" y2="18"></line>
+          </svg>
+        </div>
 
         <nav className="hidden font-light text-[var(--color-gray-dark)] sm:flex">
           <ul className="items-baseline space-y-1.5 text-center sm:flex [&>li]:px-2">
@@ -76,6 +78,7 @@ const Menu = () => {
         <a
           href="https://www.reservatuviaje.mx/default.aspx?agentID=1325"
           target="_blank"
+          className="hidden sm:flex"
         >
           <button className="hidden rounded-3xl bg-[#626cec] px-4 py-2 text-sm text-white sm:flex">
             Reservas
