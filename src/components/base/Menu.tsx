@@ -95,25 +95,60 @@ const Menu = () => {
             <nav className="font-light text-[var(--color-gray-dark)]">
               <ul className="space-y-1.5">
                 <li>
-                  <a href="#">Quiénes somo</a>
+                  <a
+                    href="#about"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Quiénes somos
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Tours de México</a>
+                  <a
+                    href="#mexico"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Tours de México
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Viajes Internacionales</a>
+                  <a
+                    href="#international"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Viajes Internacionales
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Bodas Destino</a>
+                  <a
+                    href="#weidding"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Bodas Destino
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Grupos y Convenciones</a>
+                  <a
+                    href="#groups"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Grupos y Convenciones
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Coordinación de Eventos</a>
+                  <a
+                    href="#groups"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Coordinación de Eventos
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Tramites de Visas y Pasaporte</a>
+                  <a
+                    href="#services"
+                    className="hover:text-[var(--color-primary)]"
+                  >
+                    Tramites de Visas y Pasaporte
+                  </a>
                 </li>
               </ul>
             </nav>
