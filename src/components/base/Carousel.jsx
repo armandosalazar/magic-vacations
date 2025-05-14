@@ -71,9 +71,6 @@ export default function Carousel() {
           href="https://www.reservatuviaje.mx/default.aspx?agentID=1325"
           target="_blank"
         >
-          <button className="absolute bottom-1 left-1/2 z-50 -translate-x-1/2 rounded-3xl bg-[#626cec] px-4 py-2 text-sm text-white sm:flex">
-            Reservas
-          </button>
         </a>
       </div>
       <div className="relative rounded-3xl bg-white p-4">
